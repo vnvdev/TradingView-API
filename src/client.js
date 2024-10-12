@@ -129,7 +129,7 @@ module.exports = class Client {
 
     const server = "prodata";
     this.#ws = new WebSocket(`wss://${server}.tradingview.com/socket.io/websocket?&type=chart`, {
-      origin: 'https://s.tradingview.com',
+      origin: 'https://prodata.tradingview.com',
     });
 
     if (clientOptions.token) {
